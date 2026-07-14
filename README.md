@@ -2,6 +2,10 @@
 
 OpenClaw Night Watch is a docs-only runbook for a repeating solar inspection loop.
 
+## Agent Prompt
+
+Use [night-watch-agent-prompt.md](/Users/amychang/Desktop/labs/lxc-night-watch/night-watch-agent-prompt.md) as the canonical scheduled-agent prompt. It explicitly forbids MCP discovery and requires the run to read `ORDERS.md`, `observations.md`, and `incidents.md`, fetch the solar endpoint, append a new observation, update the current incident, verify the file updates, and only then decide whether to return `NO_REPLY`, an incident alert, or a recovery message.
+
 ## Loop
 
 ### Wake
